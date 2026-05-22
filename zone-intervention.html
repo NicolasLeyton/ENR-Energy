@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zone d'intervention ENR Energy — Électricité, Photovoltaïque, Génie Climatique en Isère et Savoie</title>
+  <meta name="description" content="ENR Energy intervient dans toute la vallée du Grésivaudan, le bassin de Chambéry, la Combe de Savoie, le bassin d'Albertville et la Maurienne. Retrouvez votre commune et demandez un devis gratuit." />
+  <link rel="canonical" href="https://enr-energy.fr/zone-intervention.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green:   #3DB54A;
+      --green-d: #2E9A3C;
+      --green-l: #EBF7ED;
+      --green-xl:#F4FBF5;
+      --dark:    #1A1A1A;
+      --gray-1:  #F7F8FA;
+      --gray-2:  #ECEEF1;
+      --gray-3:  #D1D5DB;
+      --gray-4:  #9CA3AF;
+      --gray-5:  #6B7280;
+      --gray-6:  #374151;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: var(--dark); line-height: 1.7; }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* NAV */
+    .nav { background: #fff; border-bottom: 1px solid var(--gray-2); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .logo { font-family: 'Oswald', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--dark); flex-shrink: 0; }
+    .logo span { color: var(--green); }
+    .nav-links { display: flex; align-items: center; gap: 20px; }
+    .nav-back { font-size: .85rem; font-weight: 600; color: var(--gray-5); }
+    .nav-back:hover { color: var(--dark); }
+    .nav-cta { background: var(--green); color: #fff; padding: 9px 20px; border-radius: 7px; font-size: .83rem; font-weight: 700; white-space: nowrap; }
+    .nav-cta:hover { background: var(--green-d); text-decoration: none; }
+
+    /* HERO */
+    .page-hero { background: linear-gradient(135deg, #0F1A0F 0%, #111A14 60%, #0A1520 100%); padding: 64px 24px 56px; }
+    .page-hero-inner { max-width: 1100px; margin: 0 auto; }
+    .eyebrow { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--green); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    .eyebrow::before { content: ''; display: block; width: 24px; height: 2px; background: var(--green); }
+    .page-hero h1 { font-family: 'Oswald', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 700; color: #fff; margin-bottom: 16px; line-height: 1.15; }
+    .page-hero h1 em { color: var(--green); font-style: normal; }
+    .page-hero p { font-size: .95rem; color: rgba(255,255,255,.55); max-width: 680px; margin-bottom: 28px; line-height: 1.75; }
+    .hero-stats { display: flex; gap: 32px; flex-wrap: wrap; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.1); }
+    .hero-stat strong { display: block; font-family: 'Oswald', sans-serif; font-size: 1.6rem; color: var(--green); line-height: 1; }
+    .hero-stat span { font-size: .78rem; color: rgba(255,255,255,.4); }
+
+    /* SEARCH BAR */
+    .search-bar { background: var(--green-xl); border-bottom: 1px solid var(--gray-2); padding: 20px 24px; }
+    .search-bar-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .search-bar label { font-size: .82rem; font-weight: 700; color: var(--gray-6); white-space: nowrap; }
+    .search-bar input {
+      flex: 1; min-width: 220px; padding: 10px 14px; border: 1px solid var(--gray-3); border-radius: 7px;
+      font-size: .9rem; font-family: 'Inter', sans-serif; outline: none;
+      transition: border-color .15s;
+    }
+    .search-bar input:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(61,181,74,.1); }
+    .search-bar small { font-size: .75rem; color: var(--gray-4); }
+
+    /* CONTENT */
+    .content { max-width: 1100px; margin: 0 auto; padding: 56px 24px 80px; }
+
+    /* REGION CARD */
+    .region { margin-bottom: 56px; }
+    .region-header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 2px solid var(--green); }
+    .region-icon { width: 44px; height: 44px; border-radius: 10px; background: var(--green-l); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+    .region-header h2 { font-family: 'Oswald', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--dark); }
+    .region-header p { font-size: .8rem; color: var(--gray-4); margin: 0; }
+
+    /* SUB-REGION */
+    .subregion { margin-bottom: 28px; }
+    .subregion h3 { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--gray-4); margin-bottom: 12px; padding-left: 10px; border-left: 2px solid var(--gray-2); }
+
+    /* COMMUNE GRID */
+    .communes { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+    .commune {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 9px 14px; border: 1px solid var(--gray-2); border-radius: 7px;
+      background: #fff; transition: all .15s; font-size: .84rem;
+    }
+    .commune:hover { border-color: var(--green); background: var(--green-xl); transform: translateY(-1px); }
+    .commune-name { font-weight: 600; color: var(--dark); }
+    .commune-cp { font-size: .75rem; font-weight: 700; color: var(--green); background: var(--green-l); padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+
+    /* Hidden from search: shown only to search engines */
+    .seo-text { margin-bottom: 40px; padding: 24px; background: var(--gray-1); border-radius: 10px; border: 1px solid var(--gray-2); }
+    .seo-text p { font-size: .88rem; color: var(--gray-5); line-height: 1.75; }
+
+    /* CTA */
+    .cta-block { background: var(--green); border-radius: 14px; padding: 40px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-top: 56px; }
+    .cta-block h2 { font-family: 'Oswald', sans-serif; font-size: 1.6rem; color: #fff; margin-bottom: 6px; }
+    .cta-block p { font-size: .9rem; color: rgba(255,255,255,.75); margin: 0; }
+    .cta-btn { background: #fff; color: var(--green); padding: 13px 28px; border-radius: 8px; font-weight: 700; font-size: .9rem; white-space: nowrap; flex-shrink: 0; }
+    .cta-btn:hover { background: var(--gray-1); text-decoration: none; }
+
+    /* FOOTER */
+    .page-footer { background: #111; padding: 28px 24px; text-align: center; }
+    .page-footer p { font-size: .78rem; color: rgba(255,255,255,.3); margin-bottom: 6px; }
+    .page-footer a { color: rgba(255,255,255,.4); font-size: .78rem; }
+    .page-footer a:hover { color: #fff; }
+
+    /* HIDDEN HIGHLIGHT for search */
+    .commune.hidden { display: none; }
+
+    @media (max-width: 600px) {
+      .communes { grid-template-columns: 1fr 1fr; }
+      .cta-block { padding: 28px 24px; }
+      .hero-stats { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="home.html" style="display:flex;align-items:center;">
+        <img src="logo.png" alt="ENR Energy" style="height:44px;width:auto;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div style="display:none;align-items:center;gap:0;font-family:'Oswald',sans-serif;">
+          <span style="font-size:2rem;font-weight:700;color:#1A1A1A;font-style:italic;line-height:1;">EN</span>
+          <span style="background:#3DB54A;color:#fff;font-size:.5rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 5px;margin:0 1px;transform:skewX(-8deg);font-style:normal;">ENERGY</span>
+          <span style="font-size:2rem;font-weight:700;color:#3DB54A;font-style:italic;line-height:1;">R</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="home.html" class="nav-back">← Retour au site</a>
+        <a href="index.html#contact" class="nav-cta">Devis gratuit</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Rayon d'intervention · Isère & Savoie</div>
+      <h1>ENR Energy intervient<br/><em>près de chez vous</em></h1>
+      <p>Électricité, automatisme industriel, génie climatique, photovoltaïque et bornes de recharge IRVE — notre équipe couvre l'intégralité de la vallée du Grésivaudan, le bassin de Chambéry, la Combe de Savoie, le bassin d'Albertville et la basse Maurienne, dans un rayon de 50 km autour de notre siège à Barraux (38530).</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>5</strong><span>départements couverts</span></div>
+        <div class="hero-stat"><strong>90+</strong><span>communes desservies</span></div>
+        <div class="hero-stat"><strong>50 km</strong><span>rayon d'intervention</span></div>
+        <div class="hero-stat"><strong>RGE</strong><span>Qualit'EnR n° 55892</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="search-bar">
+    <div class="search-bar-inner">
+      <label for="search">Trouver ma commune :</label>
+      <input type="text" id="search" placeholder="Ex : Albertville, 73200, Grenoble…" autocomplete="off" />
+      <small id="searchCount"></small>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- SEO intro text -->
+    <div class="seo-text">
+      <p>ENR Energy, entreprise certifiée RGE basée à Barraux (Isère, 38530), réalise des installations électriques, photovoltaïques, de génie climatique (pompes à chaleur, climatisation, VMC), d'automatisme industriel et de bornes de recharge IRVE pour les particuliers, professionnels et industries de l'Isère (38) et de la Savoie (73). Notre zone d'intervention couvre notamment les codes postaux suivants : 38000, 38100, 38130, 38190, 38240, 38330, 38380, 38400, 38420, 38530, 38570, 38610, 38660, 38920, 73000, 73100, 73130, 73140, 73160, 73190, 73200, 73220, 73230, 73250, 73290, 73300, 73340, 73370, 73390, 73400, 73420, 73450, 73460, 73490, 73630, 73790, 73800, 74210.</p>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- RÉGION 1 — GRENOBLE & GRÉSIVAUDAN -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div class="region" id="grenoble">
+      <div class="region-header">
+        <div class="region-icon">⚡</div>
+        <div>
+          <h2>Métropole de Grenoble &amp; Vallée du Grésivaudan — Isère (38)</h2>
+          <p>Depuis Grenoble jusqu'à la frontière savoyarde, en passant par le plateau de Chartreuse</p>
+        </div>
+      </div>
+
+      <div class="subregion">
+        <h3>Agglomération grenobloise</h3>
+        <div class="communes" id="communes-list">
+          <div class="commune"><span class="commune-name">Grenoble</span><span class="commune-cp">38000</span></div>
+          <div class="commune"><span class="commune-name">Grenoble</span><span class="commune-cp">38100</span></div>
+          <div class="commune"><span class="commune-name">Saint-Martin-d'Hères</span><span class="commune-cp">38400</span></div>
+          <div class="commune"><span class="commune-name">Échirolles</span><span class="commune-cp">38130</span></div>
+          <div class="commune"><span class="commune-name">Meylan</span><span class="commune-cp">38240</span></div>
+          <div class="commune"><span class="commune-name">Gières</span><span class="commune-cp">38610</span></div>
+          <div class="commune"><span class="commune-name">Domène</span><span class="commune-cp">38420</span></div>
+          <div class="commune"><span class="commune-name">Murianette</span><span class="commune-cp">38420</span></div>
+        </div>
+      </div>
+
+      <div class="subregion">
+        <h3>Rive droite de l'Isère — flanc de la Chartreuse</h3>
+        <div class="communes">
+          <div class="commune"><span class="commune-name">Montbonnot-Saint-Martin</span><span class="commune-cp">38330</span></div>
+          <div class="commune"><span class="commune-name">Saint-Ismier</span><span class="commune-cp">38330</span></div>
+          <div class="commune"><span class="commune-name">Biviers</span><span class="commune-cp">38330</span></div>
+          <div class="commune"><span class="commune-name">Saint-Nazaire-les-Eymes</span><span class="commune-cp">38330</span></div>
+          <div class="commune"><span class="commune-name">Bernin</span><span class="commune-cp">38190</span></div>
+          <div class="commune"><span class="commune-name">Crolles</span><span class="commune-cp">38920</span></div>
+          <div class="commune"><span class="commune-name">Lumbin</span><span class="commune-cp">38660</span></div>
+          <div class="commune"><span class="commune-name">La Terrasse</span><span class="commune-cp">38660</span></div>
+          <div class="commune"><span class="commune-name">Le Touvet</span><span class="commune-cp">38660</span></div>
+          <div class="commune"><span class="commune-name">Saint-Vincent-de-Mercuze</span><span class="commune-cp">38660</span></div>
+          <div class="commune"><span class="commune-name">Sainte-Marie-d'Alloix</span><span class="commune-cp">38660</span></div>
+          <div class="commune"><span class="commune-name">Plateau-des-Petites-Roches</span><span class="commune-cp">38660</span></div>
+          <div class="commune"><span class="commune-name">Barraux</span><span class="commune-cp">38530</span></div>
+          <div class="commune"><span class="commune-name">Chapareillan</span><span class="commune-cp">38530</span></div>
+        </div>
+      </div>
+
+      <div class="subregion">
+        <h3>Rive gauche de l'Isère — pied de Belledonne</h3>
+        <div class="communes">
+          <div class="commune"><span class="commune-name">Villard-Bonnot</span><span class="commune-cp">38190</span></div>
+          <div class="commune"><span class="commune-name">Froges</span><span class="commune-cp">38190</span></div>
+          <div class="commune"><span class="commune-name">Le Champ-près-Froges</span><span class="commune-cp">38190</span></div>
+          <div class="commune"><span class="commune-name">La Pierre</span><span class="commune-cp">38570</span></div>
+          <div class="commune"><span class="commune-name">Tencin</span><span class="commune-cp">38570</span></div>
+          <div class="commune"><span class="commune-name">Theys</span><span class="commune-cp">38570</span></div>
+          <div class="commune"><span class="commune-name">Goncelin</span><span class="commune-cp">38570</span></div>
+          <div class="commune"><span class="commune-name">Le Cheylas</span><span class="commune-cp">38570</span></div>
+          <div class="commune"><span class="commune-name">La Buissière</span><span class="commune-cp">38530</span></div>
+          <div class="commune"><span class="commune-name">Pontcharra</span><span class="commune-cp">38530</span></div>
+        </div>
+      </div>
+
+      <div class="subregion">
+        <h3>Massif de la Chartreuse</h3>
+        <div class="communes">
+          <div class="commune"><span class="commune-name">Saint-Pierre-de-Chartreuse</span><span class="commune-cp">38380</span></div>
+          <div class="commune"><span class="commune-name">Saint-Pancrasse</span><span class="commune-cp">38660</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- RÉGION 2 — CHAMBÉRY & LAC DU BOURGET -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div class="region" id="chambery">
+      <div class="region-header">
+        <div class="region-icon">☀️</div>
+        <div>
+          <h2>Bassin de Chambéry &amp; Lac du Bourget — Savoie (73)</h2>
+          <p>Chambéry, Aix-les-Bains et leurs communes périphériques</p>
+        </div>
+      </div>
+      <div class="communes">
+        <div class="commune"><span class="commune-name">Chambéry</span><span class="commune-cp">73000</span></div>
+        <div class="commune"><span class="commune-name">Barberaz</span><span class="commune-cp">73000</span></div>
+        <div class="commune"><span class="commune-name">Bassens</span><span class="commune-cp">73000</span></div>
+        <div class="commune"><span class="commune-name">Cognin</span><span class="commune-cp">73160</span></div>
+        <div class="commune"><span class="commune-name">La Motte-Servolex</span><span class="commune-cp">73290</span></div>
+        <div class="commune"><span class="commune-name">Le Bourget-du-Lac</span><span class="commune-cp">73370</span></div>
+        <div class="commune"><span class="commune-name">Voglans</span><span class="commune-cp">73420</span></div>
+        <div class="commune"><span class="commune-name">Viviers-du-Lac</span><span class="commune-cp">73420</span></div>
+        <div class="commune"><span class="commune-name">Drumettaz-Clarafond</span><span class="commune-cp">73420</span></div>
+        <div class="commune"><span class="commune-name">Aix-les-Bains</span><span class="commune-cp">73100</span></div>
+        <div class="commune"><span class="commune-name">Tresserve</span><span class="commune-cp">73100</span></div>
+        <div class="commune"><span class="commune-name">La Ravoire</span><span class="commune-cp">73490</span></div>
+        <div class="commune"><span class="commune-name">Saint-Alban-Leysse</span><span class="commune-cp">73230</span></div>
+        <div class="commune"><span class="commune-name">Challes-les-Eaux</span><span class="commune-cp">73190</span></div>
+        <div class="commune"><span class="commune-name">Saint-Jeoire-Prieuré</span><span class="commune-cp">73190</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- RÉGION 3 — COMBE DE SAVOIE -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div class="region" id="combe-savoie">
+      <div class="region-header">
+        <div class="region-icon">❄️</div>
+        <div>
+          <h2>La Combe de Savoie — Savoie (73)</h2>
+          <p>Vallée reliant Pontcharra à Albertville le long des A41 / A43 / A430</p>
+        </div>
+      </div>
+      <div class="communes">
+        <div class="commune"><span class="commune-name">Myans</span><span class="commune-cp">73800</span></div>
+        <div class="commune"><span class="commune-name">Les Marches / Porte-de-Savoie</span><span class="commune-cp">73800</span></div>
+        <div class="commune"><span class="commune-name">Francin</span><span class="commune-cp">73800</span></div>
+        <div class="commune"><span class="commune-name">Chignin</span><span class="commune-cp">73800</span></div>
+        <div class="commune"><span class="commune-name">Montmélian</span><span class="commune-cp">73800</span></div>
+        <div class="commune"><span class="commune-name">Arbin</span><span class="commune-cp">73800</span></div>
+        <div class="commune"><span class="commune-name">Cruet</span><span class="commune-cp">73800</span></div>
+        <div class="commune"><span class="commune-name">Coise-Saint-Jean-Pied-Gauthier</span><span class="commune-cp">73800</span></div>
+        <div class="commune"><span class="commune-name">Saint-Jean-de-la-Porte</span><span class="commune-cp">73250</span></div>
+        <div class="commune"><span class="commune-name">Saint-Pierre-d'Albigny</span><span class="commune-cp">73250</span></div>
+        <div class="commune"><span class="commune-name">Fréterive</span><span class="commune-cp">73250</span></div>
+        <div class="commune"><span class="commune-name">Châteauneuf</span><span class="commune-cp">73390</span></div>
+        <div class="commune"><span class="commune-name">Bourgneuf</span><span class="commune-cp">73390</span></div>
+        <div class="commune"><span class="commune-name">Chamousset</span><span class="commune-cp">73390</span></div>
+        <div class="commune"><span class="commune-name">Chamoux-sur-Gelon</span><span class="commune-cp">73390</span></div>
+        <div class="commune"><span class="commune-name">Grésy-sur-Isère</span><span class="commune-cp">73460</span></div>
+        <div class="commune"><span class="commune-name">Bonvillard</span><span class="commune-cp">73460</span></div>
+        <div class="commune"><span class="commune-name">Sainte-Hélène-sur-Isère</span><span class="commune-cp">73460</span></div>
+        <div class="commune"><span class="commune-name">Montailleur</span><span class="commune-cp">73460</span></div>
+        <div class="commune"><span class="commune-name">Saint-Vital</span><span class="commune-cp">73460</span></div>
+        <div class="commune"><span class="commune-name">Tournon</span><span class="commune-cp">73460</span></div>
+        <div class="commune"><span class="commune-name">Frontenex</span><span class="commune-cp">73460</span></div>
+        <div class="commune"><span class="commune-name">Aiton</span><span class="commune-cp">73220</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- RÉGION 4 — ALBERTVILLE & HAUTE-SAVOIE -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div class="region" id="albertville">
+      <div class="region-header">
+        <div class="region-icon">🔌</div>
+        <div>
+          <h2>Bassin d'Albertville &amp; Haute-Savoie (73 / 74)</h2>
+          <p>Albertville, Ugine, Tarentaise et pourtour du lac d'Annecy</p>
+        </div>
+      </div>
+      <div class="communes">
+        <div class="commune"><span class="commune-name">Albertville</span><span class="commune-cp">73200</span></div>
+        <div class="commune"><span class="commune-name">Grignon</span><span class="commune-cp">73200</span></div>
+        <div class="commune"><span class="commune-name">Gilly-sur-Isère</span><span class="commune-cp">73200</span></div>
+        <div class="commune"><span class="commune-name">Mercury</span><span class="commune-cp">73200</span></div>
+        <div class="commune"><span class="commune-name">Pallud</span><span class="commune-cp">73200</span></div>
+        <div class="commune"><span class="commune-name">Venthon</span><span class="commune-cp">73200</span></div>
+        <div class="commune"><span class="commune-name">Césarches</span><span class="commune-cp">73200</span></div>
+        <div class="commune"><span class="commune-name">Tours-en-Savoie</span><span class="commune-cp">73790</span></div>
+        <div class="commune"><span class="commune-name">Ugine</span><span class="commune-cp">73400</span></div>
+        <div class="commune"><span class="commune-name">Marthod</span><span class="commune-cp">73400</span></div>
+        <div class="commune"><span class="commune-name">Faverges-Seythenex</span><span class="commune-cp">74210</span></div>
+        <div class="commune"><span class="commune-name">Doussard</span><span class="commune-cp">74210</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- RÉGION 5 — PARCS NATURELS (BAUGES & CHARTREUSE) -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div class="region" id="parcs">
+      <div class="region-header">
+        <div class="region-icon">🏔️</div>
+        <div>
+          <h2>Parcs Naturels Régionaux — Bauges &amp; Chartreuse</h2>
+          <p>Communes de montagne au cœur des massifs</p>
+        </div>
+      </div>
+
+      <div class="subregion">
+        <h3>Massif des Bauges</h3>
+        <div class="communes">
+          <div class="commune"><span class="commune-name">Le Châtelard</span><span class="commune-cp">73630</span></div>
+          <div class="commune"><span class="commune-name">École</span><span class="commune-cp">73630</span></div>
+          <div class="commune"><span class="commune-name">Jarsy</span><span class="commune-cp">73630</span></div>
+          <div class="commune"><span class="commune-name">Lescheraines</span><span class="commune-cp">73340</span></div>
+          <div class="commune"><span class="commune-name">Aillon-le-Jeune</span><span class="commune-cp">73340</span></div>
+          <div class="commune"><span class="commune-name">Aillon-le-Vieux</span><span class="commune-cp">73340</span></div>
+          <div class="commune"><span class="commune-name">Saint-François-de-Sales</span><span class="commune-cp">73340</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- RÉGION 6 — BASSE MAURIENNE -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <div class="region" id="maurienne">
+      <div class="region-header">
+        <div class="region-icon">🤖</div>
+        <div>
+          <h2>Basse Maurienne — Savoie (73)</h2>
+          <p>Vallée de l'Arc le long de l'A43, secteur sud-est</p>
+        </div>
+      </div>
+      <div class="communes">
+        <div class="commune"><span class="commune-name">Épierre</span><span class="commune-cp">73220</span></div>
+        <div class="commune"><span class="commune-name">La Chambre</span><span class="commune-cp">73130</span></div>
+        <div class="commune"><span class="commune-name">Saint-Jean-de-Maurienne</span><span class="commune-cp">73300</span></div>
+        <div class="commune"><span class="commune-name">Saint-Michel-de-Maurienne</span><span class="commune-cp">73140</span></div>
+        <div class="commune"><span class="commune-name">Saint-Martin-d'Arc</span><span class="commune-cp">73140</span></div>
+        <div class="commune"><span class="commune-name">Saint-Martin-de-la-Porte</span><span class="commune-cp">73140</span></div>
+        <div class="commune"><span class="commune-name">Valloire</span><span class="commune-cp">73450</span></div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-block">
+      <div>
+        <h2>Votre commune est dans notre zone ?</h2>
+        <p>Demandez un devis gratuit — notre équipe vous répond sous 48h ouvrées.</p>
+      </div>
+      <a href="index.html#contact" class="cta-btn">Demander un devis gratuit →</a>
+    </div>
+
+  </div><!-- /content -->
+
+  <footer class="page-footer">
+    <p>© 2026 ENR Energy SAS — 47 Impasse des Noyers, 38530 Barraux — SIREN 501 832 752 — RGE Qualit'EnR n° 55892</p>
+    <a href="home.html">← Retour au site</a> &nbsp;·&nbsp;
+    <a href="mentions-legales.html">Mentions légales</a> &nbsp;·&nbsp;
+    <a href="politique-confidentialite.html">Confidentialité</a>
+  </footer>
+
+  <script>
+    /* ── Recherche commune en temps réel ── */
+    const input      = document.getElementById('search');
+    const count      = document.getElementById('searchCount');
+    const allCards   = document.querySelectorAll('.commune');
+
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      let visible = 0;
+
+      allCards.forEach(card => {
+        const name = card.querySelector('.commune-name').textContent.toLowerCase();
+        const cp   = card.querySelector('.commune-cp').textContent.toLowerCase();
+        const match = !q || name.includes(q) || cp.includes(q);
+        card.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+
+      count.textContent = q ? `${visible} résultat${visible !== 1 ? 's' : ''}` : '';
+    });
+  </script>
+
+</body>
+</html>
