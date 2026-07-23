@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Devis — ENR Energy, Barraux (Isère) | Électricité, climatisation, photovoltaïque</title>
+  <meta name="description" content="Un projet d'électricité, de chauffage, de solaire ou de borne de recharge ? Contactez ENR Energy à Barraux : téléphone, formulaire de devis et plan d'accès." />
+  <link rel="canonical" href="https://enr-energy.fr/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="ENR Energy" />
+  <meta property="og:title" content="Contact & Devis — ENR Energy" />
+  <meta property="og:description" content="Un projet d'électricité, de chauffage, de solaire ou de borne de recharge ? Contactez ENR Energy à Barraux : téléphone, formulaire de devis et plan d'accès." />
+  <meta property="og:url" content="https://enr-energy.fr/contact.html" />
+  <meta property="og:image" content="https://enr-energy.fr/batiment-enr.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "Electrician", "HVACBusiness"],
+        "@id": "https://enr-energy.fr/#organization",
+        "name": "ENR Energy",
+        "legalName": "ENR Energy SAS",
+        "url": "https://enr-energy.fr/",
+        "logo": "https://enr-energy.fr/logo.png",
+        "telephone": "+33476405669",
+        "email": "contact@enr-energy.fr",
+        "foundingDate": "2008",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "47 Impasse des Noyers",
+          "postalCode": "38530",
+          "addressLocality": "Barraux",
+          "addressRegion": "Auvergne-Rhône-Alpes",
+          "addressCountry": "FR"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 45.4326, "longitude": 5.9797 },
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "07:00", "closes": "18:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "07:00", "closes": "17:00" }
+        ]
+      },
+      {
+        "@type": "ContactPage",
+        "@id": "https://enr-energy.fr/contact.html",
+        "url": "https://enr-energy.fr/contact.html",
+        "name": "Contact & Devis — ENR Energy",
+        "isPartOf": { "@id": "https://enr-energy.fr/#organization" },
+        "inLanguage": "fr-FR"
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="fonts.css" />
+  <style>
+    .e-ico{width:1em;height:1em;vertical-align:-.14em;display:inline-block;}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green:   #3DB54A;
+      --green-d: #2E9A3C;
+      --green-l: #EBF7ED;
+      --green-xl:#F4FBF5;
+      --dark:    #1A1A1A;
+      --gray-1:  #F7F8FA;
+      --gray-2:  #ECEEF1;
+      --gray-3:  #D1D5DB;
+      --gray-4:  #9CA3AF;
+      --gray-5:  #6B7280;
+      --gray-6:  #374151;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: var(--dark); line-height: 1.7; }
+    a { color: var(--green); text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* NAV */
+    .nav { background:#fff; border-bottom:1px solid var(--gray-2); padding:0 24px; position:sticky; top:0; z-index:1000; }
+    .nav-inner { max-width:1240px; margin:0 auto; height:64px; display:flex; align-items:center; justify-content:space-between; gap:14px; }
+    .logo-wrap { display:flex; align-items:center; flex-shrink:0; }
+    .logo-img { height:44px; width:auto; flex-shrink:0; }
+    .logo-fallback { font-family:'Oswald',sans-serif; font-weight:700; font-style:italic; font-size:1.4rem; color:var(--dark); }
+    .nav-menu { display:flex; align-items:center; gap:2px; list-style:none; }
+    .nav-item { position:relative; }
+    .nav-link { display:flex; align-items:center; gap:4px; font-size:.78rem; font-weight:600; color:var(--gray-6); text-transform:uppercase; letter-spacing:.02em; padding:8px 9px; border-radius:6px; cursor:pointer; white-space:nowrap; transition:all .15s; text-decoration:none; }
+    .nav-link:hover, .nav-link.active { color:var(--dark); background:var(--gray-1); }
+    .nav-link.active { color:var(--green); }
+    .nav-link .chevron { font-size:.6rem; transition:transform .15s; }
+    .nav-item:hover .chevron { transform:rotate(180deg); }
+    .dropdown { position:absolute; top:calc(100% + 6px); right:0; min-width:212px; background:#fff; border:1px solid var(--gray-2); border-radius:12px; box-shadow:0 12px 32px rgba(0,0,0,.12); padding:8px; opacity:0; visibility:hidden; transform:translateY(-6px); transition:all .15s ease; z-index:200; }
+    .nav-item:hover .dropdown { opacity:1; visibility:visible; transform:translateY(0); }
+    .dropdown a { display:flex; align-items:center; gap:8px; padding:9px 12px; border-radius:6px; font-size:.83rem; font-weight:500; color:var(--gray-6); text-transform:none; letter-spacing:0; white-space:nowrap; }
+    .dropdown a:hover { background:var(--gray-1); color:var(--dark); }
+    .dropdown .dd-ext { color:var(--gray-4); margin-left:auto; font-size:.9rem; }
+    .dropdown-sep { height:1px; background:var(--gray-2); margin:6px 4px; }
+    .nav-right { display:flex; align-items:center; gap:12px; }
+    .nav-phone { font-size:.82rem; font-weight:700; color:var(--dark); white-space:nowrap; }
+    .nav-cta { background:var(--green); color:#fff; padding:9px 18px; border-radius:7px; font-size:.82rem; font-weight:700; white-space:nowrap; }
+    .nav-cta:hover { background:var(--green-d); }
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; background:none; border:none; }
+    .hamburger span { width:22px; height:2px; background:var(--dark); border-radius:2px; }
+    .mobile-menu { display:none; position:fixed; inset:0; z-index:1100; background:#fff; flex-direction:column; padding:76px 24px 40px; overflow-y:auto; }
+    .mobile-menu.open { display:flex; }
+    .mobile-close { position:fixed; top:18px; right:20px; background:none; border:none; font-size:1.5rem; cursor:pointer; }
+    .mobile-menu a { padding:13px 0; font-size:1rem; font-weight:600; color:var(--dark); border-bottom:1px solid var(--gray-2); text-decoration:none; }
+    .mobile-menu .mm-group { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--gray-4); padding:18px 0 4px; }
+    .mobile-menu a.mm-cta { background:var(--green); color:#fff; border:none; border-radius:8px; text-align:center; margin-top:20px; padding:14px; }
+    @media (max-width:1100px){ .nav-menu, .nav-right { display:none; } .hamburger { display:flex; } }
+
+    /* HERO */
+    .page-hero { background: linear-gradient(135deg, #0F1A0F 0%, #111A14 60%, #0A1520 100%); padding: 64px 24px 52px; }
+    .page-hero-inner { max-width: 1100px; margin: 0 auto; }
+    .eyebrow { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--green); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    .eyebrow::before { content: ''; display: block; width: 24px; height: 2px; background: var(--green); }
+    .page-hero h1 { font-family: 'Oswald', sans-serif; font-size: clamp(1.9rem, 4vw, 3rem); font-weight: 700; color: #fff; margin-bottom: 14px; line-height: 1.15; }
+    .page-hero h1 em { color: var(--green); font-style: normal; }
+    .page-hero p { font-size: .95rem; color: rgba(255,255,255,.6); max-width: 660px; line-height: 1.75; }
+
+    /* SECTIONS */
+    .section { padding: 64px 0; }
+    .section-bg { background: var(--gray-1); }
+    .label { display: inline-flex; align-items: center; gap: 8px; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--green); margin-bottom: 12px; }
+    .label::before { content: ''; display: block; width: 20px; height: 2px; background: var(--green); }
+    h2 { font-family: 'Oswald', sans-serif; font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
+    .sec-intro { font-size: .95rem; color: var(--gray-5); max-width: 720px; margin-bottom: 36px; }
+
+    /* PARLONS / CONTACT GRID */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px; align-items: start; }
+    .contact-grid > * { min-width: 0; }
+    .contact-details { display: flex; flex-direction: column; gap: 18px; margin-top: 28px; }
+    .contact-item { display: flex; gap: 14px; align-items: flex-start; }
+    .contact-icon { width: 42px; height: 42px; border-radius: 9px; flex-shrink: 0; background: var(--green-l); border: 1px solid rgba(61,181,74,.2); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: var(--green); }
+    .contact-icon svg { width: 20px; height: 20px; }
+    .contact-item h3 { font-size: .85rem; font-weight: 700; margin-bottom: 2px; }
+    .contact-item p { font-size: .85rem; color: var(--gray-5); margin: 0; line-height: 1.55; }
+    .urgent-note { margin-top: 26px; background: var(--green-xl); border: 1px solid #DCEEDF; border-radius: 10px; padding: 16px 18px; font-size: .85rem; color: var(--gray-6); }
+    .urgent-note strong { color: var(--dark); }
+
+    /* FORM */
+    .form-box { background: var(--gray-1); border: 1px solid var(--gray-2); border-radius: 14px; padding: 36px; }
+    .form-box h3 { font-family: 'Oswald', sans-serif; font-size: 1.3rem; margin-bottom: 24px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .fg { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+    .fg label { font-size: .76rem; font-weight: 700; color: var(--gray-6); text-transform: uppercase; letter-spacing: .05em; }
+    .fg input, .fg select, .fg textarea {
+      background: #fff; border: 1px solid var(--gray-3); border-radius: 8px; padding: 11px 14px;
+      font-size: .9rem; font-family: 'Inter', sans-serif; color: var(--dark);
+      transition: border-color .15s; outline: none; width: 100%; min-width: 0;
+    }
+    .fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(61,181,74,.1); }
+    .fg textarea { min-height: 96px; resize: vertical; }
+    .btn-submit {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px; width: 100%;
+      padding: 15px 28px; border-radius: 8px; font-size: .95rem; font-weight: 700;
+      background: var(--green); color: #fff; border: none; cursor: pointer; font-family: 'Inter', sans-serif;
+      transition: background .18s;
+    }
+    .btn-submit:hover { background: var(--green-d); }
+    .form-footnote { font-size: .78rem; color: var(--gray-4); margin-top: 12px; text-align: center; line-height: 1.6; }
+
+    /* GALLERY */
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .gallery figure { border-radius: 12px; overflow: hidden; border: 1px solid var(--gray-2); background: #fff; }
+    .gallery img { width: 100%; height: 210px; object-fit: cover; }
+    .gallery figcaption { padding: 12px 16px; font-size: .82rem; color: var(--gray-5); }
+    .ph {
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+      border-bottom: 2px dashed var(--gray-3); background: var(--gray-1);
+      color: var(--gray-4); font-size: .82rem; text-align: center; padding: 16px;
+      height: 210px; width: 100%;
+    }
+    .ph .ph-ico { line-height: 0; }
+    .ph .ph-ico svg { width: 28px; height: 28px; }
+
+    /* ACCESS */
+    .access-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: start; }
+    .access-map { border-radius: 14px; overflow: hidden; border: 1px solid var(--gray-2); }
+    .access-map iframe { width: 100%; height: 380px; border: 0; display: block; }
+    /* Consentement en deux clics (recommandation CNIL) : la carte Google Maps
+       n'est chargée qu'après un clic explicite de l'utilisateur. */
+    .map-consent {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 14px; height: 380px; padding: 24px; text-align: center; background: var(--gray-1);
+    }
+    .map-consent .mc-ico { font-size: 2rem; }
+    .map-consent p { font-size: .84rem; color: var(--gray-5); max-width: 420px; margin: 0; }
+    .map-consent p a { color: var(--green); text-decoration: underline; }
+    .map-consent button {
+      font: inherit; font-size: .9rem; font-weight: 700; color: #fff; background: var(--green);
+      border: 0; border-radius: 8px; padding: 12px 22px; cursor: pointer;
+    }
+    .map-consent button:hover { filter: brightness(1.08); }
+    .map-consent .mc-alt { font-size: .78rem; color: var(--gray-4); }
+    .times { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--gray-2); border-radius: 14px; overflow: hidden; }
+    .time-row { display: flex; align-items: center; justify-content: space-between; padding: 13px 18px; font-size: .88rem; background: #fff; }
+    .time-row + .time-row { border-top: 1px solid var(--gray-2); }
+    .time-row strong { font-weight: 600; color: var(--dark); }
+    .time-row span { color: var(--green); font-weight: 700; white-space: nowrap; }
+
+    /* FOOTER */
+    .page-footer { background: #111; padding: 40px 24px 28px; }
+    .page-footer-inner { max-width: 1100px; margin: 0 auto; }
+    .pf-links { display: flex; gap: 10px 22px; flex-wrap: wrap; margin-bottom: 20px; }
+    .pf-links a { color: rgba(255,255,255,.55); font-size: .82rem; }
+    .pf-links a:hover { color: #fff; }
+    .page-footer p { font-size: .76rem; color: rgba(255,255,255,.3); }
+
+    @media (max-width: 900px) {
+      .nav-menu, .nav-right { display: none; }
+      .hamburger { display: flex; }
+      .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+      .access-grid { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .section { padding: 52px 0; }
+      .form-row { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: 1fr; }
+      .form-box { padding: 26px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-wrap" aria-label="ENR Energy — accueil">
+        <img src="logo.png" alt="ENR Energy, électricien et installateur d'énergies renouvelables à Barraux (Isère)" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';" />
+        <span class="logo-fallback" style="display:none;">ENR ENERGY</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+        <li class="nav-item"><a href="electricite.html" class="nav-link">Électricité</a></li>
+        <li class="nav-item"><a href="domotique.html" class="nav-link">Domotique</a></li>
+        <li class="nav-item"><a href="automatisme-industriel.html" class="nav-link">Automatisme</a></li>
+        <li class="nav-item"><a href="genie-climatique.html" class="nav-link">Génie climatique</a></li>
+        <li class="nav-item"><a href="photovoltaique.html" class="nav-link">Photovoltaïque</a></li>
+        <li class="nav-item"><a href="bornes-de-recharge.html" class="nav-link">Bornes</a></li>
+        <li class="nav-item"><a href="qui-sommes-nous.html" class="nav-link">Qui sommes-nous</a></li>
+        <li class="nav-item">
+          <span class="nav-link">Ressources <span class="chevron">▾</span></span>
+          <div class="dropdown">
+            <a href="galerie.html">Galerie</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="avis-clients.html">Avis clients</a>
+            <a href="notre-methode.html">Notre méthode</a>
+            <a href="aides-etat.html">Aides de l'État</a>
+            <a href="partenaires.html">Partenaires</a>
+            <a href="nous-recrutons.html">Nous recrutons</a>
+            <div class="dropdown-sep"></div>
+            <a href="https://www.linkedin.com/company/enr-energy/" target="_blank" rel="noopener">LinkedIn <span class="dd-ext">↗</span></a>
+            <a href="https://www.facebook.com/profile.php?id=61589418173402" target="_blank" rel="noopener">Facebook <span class="dd-ext">↗</span></a>
+          </div>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <a href="tel:+33476405669" class="nav-phone" style="display:flex;align-items:center;gap:6px;font-size:.83rem;font-weight:700;color:var(--dark);">
+          <span style="font-size:.9rem;"><svg class="e-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+          <span style="display:flex;flex-direction:column;line-height:1.35;">
+            <span style="white-space:nowrap;">04 76 40 56 69</span>
+            <span style="white-space:nowrap;">06 46 42 10 22</span>
+          </span>
+        </a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="menuClose" aria-label="Fermer">✕</button>
+    <a href="index.html">Accueil</a>
+    <a href="electricite.html">Électricité</a>
+    <a href="domotique.html">Domotique &amp; Automatisation</a>
+    <a href="automatisme-industriel.html">Automatisme Industriel</a>
+    <a href="genie-climatique.html">Génie Climatique</a>
+    <a href="photovoltaique.html">Photovoltaïque</a>
+    <a href="bornes-de-recharge.html">Bornes de Recharge</a>
+    <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+    <div class="mm-group">Ressources</div>
+    <a href="galerie.html">Galerie</a>
+    <a href="actualites.html">Actualités</a>
+    <a href="avis-clients.html">Avis clients</a>
+    <a href="notre-methode.html">Notre méthode</a>
+    <a href="aides-etat.html">Aides de l'État</a>
+    <a href="partenaires.html">Partenaires</a>
+    <a href="nous-recrutons.html">Nous recrutons</a>
+    <a href="https://www.linkedin.com/company/enr-energy/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a href="https://www.facebook.com/profile.php?id=61589418173402" target="_blank" rel="noopener">Facebook ↗</a>
+    <a href="contact.html" class="mm-cta">Contact</a>
+    <a href="tel:+33476405669" style="border:none;text-align:center;color:var(--green);font-weight:700;"><svg class="e-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg> 04 76 40 56 69</a> <a href="tel:+33476405669" style="border:none;text-align:center;color:var(--green);font-weight:700;">/ 06 46 42 10 22</a>
+  </div>
+  <!-- ===== HERO ===== -->
+  <header class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Contact &amp; Devis</div>
+      <h1>Contactez <em>ENR Energy</em>, électricien RGE à Barraux (Isère)</h1>
+      <p>Un devis, une question technique, un projet encore flou ? Notre équipe de Barraux vous répond simplement, sans jargon — par téléphone, par email ou via le formulaire ci-dessous.</p>
+    </div>
+  </header>
+
+  <!-- ===== PARLONS DE VOTRE PROJET + CONTACTEZ-NOUS ===== -->
+  <section class="section" id="parlons">
+    <div class="container">
+      <div class="contact-grid">
+        <div id="parlons-projet">
+          <div class="label">Parlons de votre projet</div>
+          <h2>Parlons de<br/>votre projet.</h2>
+          <p style="font-size:.95rem;color:var(--gray-5);">Panneaux solaires, pompe à chaleur, mise aux normes électriques, borne de recharge, projet tertiaire ou industriel : décrivez-nous votre besoin, nous étudions chaque demande et vous recontactons.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><svg class="e-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></div>
+              <div>
+                <h3>Téléphone</h3>
+                <a href="tel:+33476405669" style="font-size:.95rem;font-weight:700;">04 76 40 56 69</a> · <a href="tel:+33476405669" style="font-size:.95rem;font-weight:700;">06 46 42 10 22</a>
+                <p>Lun – Jeu : 7h00 – 18h00 · Ven : 7h00 – 17h00</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><svg class="e-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:contact@enr-energy.fr" style="font-size:.9rem;font-weight:600;">contact@enr-energy.fr</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><svg class="e-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div>
+                <h3>Adresse</h3>
+                <p>47 Impasse des Noyers, Parc d'Activités Le Renevier<br/>38530 Barraux, Isère — <a href="#acces">plan d'accès ↓</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><svg class="e-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.9 7 22l5-3 5 3-1.2-8.1"/></svg></div>
+              <div>
+                <h3>Certification RGE</h3>
+                <p>Qualit'EnR n° 55892 · QualiPV 500 kWc · QualiPAC<br/>SIREN : 501 832 752</p>
+              </div>
+            </div>
+          </div>
+          <div class="urgent-note">
+            <strong>Une demande urgente ?</strong> Le plus rapide est de nous appeler directement au <a href="tel:+33476405669" style="font-weight:700;">04 76 40 56 69</a> ou au <a href="tel:+33476405669" style="font-weight:700;">06 46 42 10 22</a> pendant nos horaires d'ouverture.
+          </div>
+        </div>
+
+        <!-- ===== CONTACTEZ-NOUS (formulaire) ===== -->
+        <div class="form-box" id="contactez-nous">
+          <div class="label">Contactez-nous</div>
+          <h3>Votre demande de devis ou de contact</h3>
+          <form id="contactForm" onsubmit="handleForm(event)" novalidate>
+            <!-- Honeypot anti-spam — invisible aux humains -->
+            <input type="text" name="website" tabindex="-1" autocomplete="off"
+                   aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;" />
+            <div class="form-row">
+              <div class="fg"><label>Prénom *</label><input type="text" name="prenom" placeholder="Jean" required /></div>
+              <div class="fg"><label>Nom *</label><input type="text" name="nom" placeholder="Dupont" required /></div>
+            </div>
+            <div class="form-row">
+              <div class="fg"><label>Email *</label><input type="email" name="email" placeholder="jean@exemple.fr" required /></div>
+              <div class="fg"><label>Téléphone</label><input type="tel" name="telephone" placeholder="XX XX XX XX XX" /></div>
+            </div>
+            <div class="fg">
+              <label>Vous êtes *</label>
+              <select name="profil" required>
+                <option value="" disabled selected>Sélectionnez votre profil</option>
+                <option>Particulier – propriétaire</option>
+                <option>Professionnel / Entreprise</option>
+                <option>Copropriété / Syndic</option>
+                <option>Industriel / Site de production</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label>Votre projet *</label>
+              <select name="projet" required>
+                <option value="" disabled selected>Type de prestation souhaité</option>
+                <optgroup label="Énergies renouvelables">
+                  <option>Panneaux photovoltaïques</option>
+                  <option>Pompe à chaleur (PAC)</option>
+                  <option>Chauffe-eau thermodynamique</option>
+                </optgroup>
+                <optgroup label="Électricité">
+                  <option>Installation électrique / mise aux normes</option>
+                  <option>Domotique &amp; automatisation</option>
+                  <option>Automatisme industriel</option>
+                  <option>Borne de recharge IRVE</option>
+                </optgroup>
+                <optgroup label="Climatique">
+                  <option>Climatisation / VMC</option>
+                  <option>Génie climatique tertiaire</option>
+                  <option>Maintenance &amp; entretien</option>
+                </optgroup>
+                <option>Je ne sais pas encore / Plusieurs besoins</option>
+              </select>
+            </div>
+            <div class="fg"><label>Code postal</label><input type="text" name="code_postal" placeholder="38530" /></div>
+            <div class="fg">
+              <label>Votre message</label>
+              <textarea name="message" placeholder="Décrivez votre projet, vos contraintes, vos questions…"></textarea>
+            </div>
+            <!-- Consentement RGPD -->
+            <div class="fg" style="margin-bottom:18px;">
+              <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;text-transform:none;letter-spacing:0;font-weight:400;font-size:.83rem;color:var(--gray-6);line-height:1.5;background:#F4FBF5;border:1px solid #DCEEDF;border-radius:8px;padding:14px;">
+                <input type="checkbox" name="rgpd_consent" value="oui" id="rgpd" required style="margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:var(--green);" />
+                <span style="min-width:0;">J'accepte que mes données soient traitées par ENR Energy SAS afin de répondre à ma demande. Conformément au RGPD, je dispose d'un droit d'accès, de rectification et de suppression en écrivant à <a href="mailto:contact@enr-energy.fr" style="font-weight:600;">contact@enr-energy.fr</a>. Voir notre <a href="politique-confidentialite.html" target="_blank" style="font-weight:600;">politique de confidentialité</a>. *</span>
+              </label>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn">Envoyer ma demande →</button>
+            <p class="form-footnote">Pour toute demande urgente, appelez-nous directement au <a href="tel:+33476405669" style="font-weight:700;">04 76 40 56 69</a> ou au <a href="tel:+33476405669" style="font-weight:700;">06 46 42 10 22</a>.</p>
+            <p class="form-footnote" style="margin-top:6px;font-size:.72rem;">Vos données sont conservées 3 ans et ne sont jamais revendues. Données hébergées en France (LWS, ISO 27001).</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOS LOCAUX & NOTRE ÉQUIPE ===== -->
+  <section class="section section-bg" id="locaux">
+    <div class="container">
+      <div class="label">Nos locaux à Barraux</div>
+      <h2>Là où votre projet prend forme</h2>
+      <p class="sec-intro">Hangar, bureaux, showroom et atelier : vous êtes les bienvenus au Parc d'Activités Le Renevier pour parler de votre projet autour d'un café.</p>
+      <div class="gallery">
+        <figure>
+          <img src="batiment-enr.jpeg" alt="Façade du bâtiment d'ENR Energy, 47 impasse des Noyers à Barraux (Isère)" />
+          <figcaption>Le hangar et le bâtiment ENR Energy.</figcaption>
+        </figure>
+        <figure>
+          <img src="batiment-side.jpg" alt="Vue latérale des locaux d'ENR Energy à Barraux, au pied de la chaîne de Belledonne (Isère)" />
+          <figcaption>Nos locaux au Parc d'Activités Le Renevier.</figcaption>
+        </figure>
+        <figure>
+          <!-- TODO: photo des bureaux -->
+          <div class="ph"><span class="ph-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></svg></span><span>Photo à venir — les bureaux</span></div>
+          <figcaption>Les bureaux et le bureau d'études.</figcaption>
+        </figure>
+        <figure>
+          <!-- TODO: photo du showroom -->
+          <div class="ph"><span class="ph-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></svg></span><span>Photo à venir — le showroom</span></div>
+          <figcaption>Le showroom : bornes, PAC et matériel exposés.</figcaption>
+        </figure>
+        <figure>
+          <!-- TODO: photo de l'atelier -->
+          <div class="ph"><span class="ph-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></svg></span><span>Photo à venir — l'atelier</span></div>
+          <figcaption>L'atelier de préparation des chantiers.</figcaption>
+        </figure>
+        <figure>
+          <!-- TODO: photo d'équipe (groupe) -->
+          <div class="ph"><span class="ph-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span>Photo à venir — l'équipe ENR Energy</span></div>
+          <figcaption>L'équipe ENR Energy — <a href="qui-sommes-nous.html">faire connaissance →</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLAN D'ACCÈS ===== -->
+  <section class="section" id="acces">
+    <div class="container">
+      <div class="label">Plan d'accès</div>
+      <h2>Venir nous voir à Barraux</h2>
+      <p class="sec-intro">Nos locaux sont à 2 minutes de la sortie « Pontcharra » de l'A41, entre Grenoble et Chambéry.</p>
+      <div class="access-grid">
+        <div class="access-map">
+          <div class="map-consent" id="map-consent">
+            <p>En affichant la carte, vous acceptez que votre navigateur charge du contenu depuis <strong>Google Maps</strong>, ce qui entraîne le dépôt de cookies par Google et la transmission de données (dont votre adresse IP) à Google. En savoir plus dans notre <a href="politique-confidentialite.html">politique de confidentialité</a>.</p>
+            <button type="button" id="map-load-btn">Afficher la carte Google Maps</button>
+            <p class="mc-alt">Ou <a href="https://www.google.com/maps/search/?api=1&query=ENR+Energy,+47+Impasse+des+Noyers,+38530+Barraux" target="_blank" rel="noopener">ouvrir l'itinéraire dans un nouvel onglet</a> — adresse : 47 Impasse des Noyers, 38530 Barraux.</p>
+          </div>
+        </div>
+        <script>
+          document.getElementById('map-load-btn').addEventListener('click', function () {
+            var iframe = document.createElement('iframe');
+            iframe.src = 'https://www.google.com/maps?q=ENR+Energy,+47+Impasse+des+Noyers,+38530+Barraux&output=embed';
+            iframe.title = "Plan d'accès ENR Energy — 47 Impasse des Noyers, 38530 Barraux";
+            iframe.setAttribute('loading', 'lazy');
+            iframe.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
+            iframe.setAttribute('allowfullscreen', '');
+            var consent = document.getElementById('map-consent');
+            consent.parentNode.replaceChild(iframe, consent);
+          });
+        </script>
+        <div>
+          <!-- Temps de trajet indicatifs en voiture. TODO: faire valider ces durées par l'équipe -->
+          <div class="times">
+            <div class="time-row"><strong>Depuis Pontcharra</strong><span>≈ 5 min</span></div>
+            <div class="time-row"><strong>Depuis Le Touvet</strong><span>≈ 10 min</span></div>
+            <div class="time-row"><strong>Depuis Montmélian</strong><span>≈ 15 min</span></div>
+            <div class="time-row"><strong>Depuis Crolles</strong><span>≈ 15 min</span></div>
+            <div class="time-row"><strong>Depuis Chambéry</strong><span>≈ 25 min</span></div>
+            <div class="time-row"><strong>Depuis Grenoble</strong><span>≈ 35 min</span></div>
+            <div class="time-row"><strong>Depuis Aix-les-Bains</strong><span>≈ 40 min</span></div>
+            <div class="time-row"><strong>Depuis Albertville</strong><span>≈ 45 min</span></div>
+          </div>
+          <p style="font-size:.76rem;color:var(--gray-4);margin-top:10px;">Temps de trajet indicatifs en voiture, hors trafic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="page-footer">
+    <div class="page-footer-inner">
+      <div class="pf-links" style="margin-bottom:8px;">
+        <a href="electricite.html">Électricité</a>
+        <a href="domotique.html">Domotique &amp; Automatisation</a>
+        <a href="automatisme-industriel.html">Automatisme Industriel</a>
+        <a href="genie-climatique.html">Génie Climatique</a>
+        <a href="photovoltaique.html">Photovoltaïque</a>
+        <a href="bornes-de-recharge.html">Bornes de Recharge</a>
+      </div>
+      <div class="pf-links">
+        <a href="index.html">Accueil</a>
+        <a href="particuliers.html">Particuliers</a>
+        <a href="professionnels.html">Professionnels</a>
+        <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+        <a href="zone-intervention.html">Zone d'intervention</a>
+        <a href="contact.html">Contact</a>
+        <a href="nous-recrutons.html">Nous recrutons</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+      </div>
+      <p>© 2026 ENR Energy SAS — 47 Impasse des Noyers, 38530 Barraux — SIREN 501 832 752 — RGE Qualit'EnR n° 55892</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+    document.getElementById('menuClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+
+    // Form submit — envoi via contact.php (LWS, hébergé en France)
+    async function handleForm(e) {
+      e.preventDefault();
+      const btn  = document.getElementById('submitBtn');
+      const form = document.getElementById('contactForm');
+
+      btn.textContent = 'Envoi en cours…';
+      btn.disabled = true;
+      btn.style.opacity = '.75';
+
+      try {
+        const res  = await fetch('contact.php', {
+          method: 'POST',
+          body:   new FormData(form)
+        });
+        const data = await res.json();
+
+        if (data.success) {
+          btn.textContent = '✓ Demande envoyée — merci !';
+          btn.style.background = '#16A34A';
+          btn.style.opacity    = '1';
+          form.reset();
+        } else {
+          throw new Error(data.message || 'Erreur');
+        }
+      } catch (err) {
+        btn.textContent = 'Erreur — appelez-nous au 04 76 40 56 69 ou 06 46 42 10 22';
+        btn.style.background = '#DC2626';
+        btn.style.opacity    = '1';
+        btn.disabled = false;
+        console.error(err);
+      }
+    }
+  </script>
+  <script src="cookie-consent.js" defer></script>
+</body>
+</html>

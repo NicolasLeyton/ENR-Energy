@@ -1,0 +1,42 @@
+════════════════════════════════════════════════════════════════════
+  DOSSIER « realisations » — LES PHOTOS DE LA GALERIE DU SITE
+════════════════════════════════════════════════════════════════════
+
+À QUOI SERT CE DOSSIER ?
+------------------------
+Toutes les images déposées ici s'affichent AUTOMATIQUEMENT dans le
+carrousel de la galerie : https://enr-energy.fr/galerie.html
+Il n'y a AUCUN code à modifier. Vous déposez une photo → elle apparaît.
+
+
+COMMENT AJOUTER DES PHOTOS ?
+----------------------------
+1. Connectez-vous au gestionnaire de fichiers LWS (ou par FTP).
+2. Ouvrez ce dossier « realisations ».
+3. Glissez-déposez vos photos dedans.
+4. C'est tout : la galerie se met à jour toute seule.
+
+
+BONNES PRATIQUES
+----------------
+• Formats acceptés : JPG, JPEG, PNG, WEBP, GIF, AVIF.
+• L'ORDRE d'affichage suit le NOM du fichier (ordre alphabétique).
+      Pour imposer un ordre précis, préfixez : « 01_… », « 02_… », etc.
+• Le NOM du fichier devient la LÉGENDE affichée sous la photo.
+      Exemple :  « Panneaux solaires Barraux.jpg »
+                 s'affiche avec la légende « Panneaux solaires Barraux ».
+      Les noms techniques (IMG_1234.jpg, DSC0001.jpg…) n'affichent
+      aucune légende : c'est normal, la photo apparaît quand même.
+• Poids conseillé : moins de 400 Ko par photo (pour un site rapide).
+      Astuce : redimensionnez à ~1600 px de large avant l'envoi.
+• Ne mettez ici QUE des photos destinées au public
+  (pas de données clients, pas de documents).
+
+
+À NE PAS SUPPRIMER
+------------------
+• « .htaccess » : autorise la galerie à lire ce dossier (indispensable).
+• « LISEZMOI.txt » : ce fichier. Aucun des deux n'est affiché sur le
+  site (seules les images le sont).
+
+════════════════════════════════════════════════════════════════════

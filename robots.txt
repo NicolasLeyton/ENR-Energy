@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enr-energy.fr/sitemap.xml

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Actualités — nos dernières publications | ENR Energy</title>
+  <meta name="description" content="Suivez l'actualité d'ENR Energy en Isère et Savoie : nos derniers chantiers, publications et actualités sur Facebook, LinkedIn et Google." />
+  <link rel="canonical" href="https://enr-energy.fr/actualites.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="ENR Energy" />
+  <meta property="og:title" content="Actualités — ENR Energy" />
+  <meta property="og:description" content="Nos derniers chantiers et publications sur Facebook, LinkedIn et Google — Isère & Savoie." />
+  <meta property="og:url" content="https://enr-energy.fr/actualites.html" />
+  <meta property="og:image" content="https://enr-energy.fr/offre-complete-bg.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="stylesheet" href="fonts.css" />
+  <style>
+    .e-ico{width:1em;height:1em;vertical-align:-.14em;display:inline-block;}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green:   #3DB54A;
+      --green-d: #2E9A3C;
+      --green-l: #EBF7ED;
+      --green-xl:#F4FBF5;
+      --dark:    #1A1A1A;
+      --gray-1:  #F7F8FA;
+      --gray-2:  #ECEEF1;
+      --gray-3:  #D1D5DB;
+      --gray-4:  #9CA3AF;
+      --gray-5:  #6B7280;
+      --gray-6:  #374151;
+      --white:   #fff;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: var(--dark); line-height: 1.7; }
+    a { color: var(--green); text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    h1, h2, h3 { font-family: 'Oswald', sans-serif; line-height: 1.1; }
+
+    /* ===== NAV (canonique — partagée sur tout le site) ===== */
+    .nav { background:#fff; border-bottom:1px solid var(--gray-2); padding:0 24px; position:sticky; top:0; z-index:1000; }
+    .nav-inner { max-width:1240px; margin:0 auto; height:64px; display:flex; align-items:center; justify-content:space-between; gap:14px; }
+    .logo-wrap { display:flex; align-items:center; flex-shrink:0; }
+    .logo-img { height:44px; width:auto; flex-shrink:0; }
+    .logo-fallback { font-family:'Oswald',sans-serif; font-weight:700; font-style:italic; font-size:1.4rem; color:var(--dark); }
+    .nav-menu { display:flex; align-items:center; gap:2px; list-style:none; }
+    .nav-item { position:relative; }
+    .nav-link { display:flex; align-items:center; gap:4px; font-size:.78rem; font-weight:600; color:var(--gray-6); text-transform:uppercase; letter-spacing:.02em; padding:8px 9px; border-radius:6px; cursor:pointer; white-space:nowrap; transition:all .15s; }
+    .nav-link:hover, .nav-link.active { color:var(--dark); background:var(--gray-1); }
+    .nav-link.active { color:var(--green); }
+    .nav-link .chevron { font-size:.6rem; transition:transform .15s; }
+    .nav-item:hover .chevron { transform:rotate(180deg); }
+    .dropdown { position:absolute; top:calc(100% + 6px); right:0; min-width:212px; background:#fff; border:1px solid var(--gray-2); border-radius:12px; box-shadow:0 12px 32px rgba(0,0,0,.12); padding:8px; opacity:0; visibility:hidden; transform:translateY(-6px); transition:all .15s ease; z-index:200; }
+    .nav-item:hover .dropdown { opacity:1; visibility:visible; transform:translateY(0); }
+    .dropdown a { display:flex; align-items:center; gap:8px; padding:9px 12px; border-radius:6px; font-size:.83rem; font-weight:500; color:var(--gray-6); text-transform:none; letter-spacing:0; white-space:nowrap; }
+    .dropdown a:hover { background:var(--gray-1); color:var(--dark); }
+    .dropdown .dd-ext { color:var(--gray-4); margin-left:auto; font-size:.9rem; }
+    .dropdown-sep { height:1px; background:var(--gray-2); margin:6px 4px; }
+    .nav-right { display:flex; align-items:center; gap:12px; }
+    .nav-phone { font-size:.82rem; font-weight:700; color:var(--dark); white-space:nowrap; }
+    .nav-cta { background:var(--green); color:#fff; padding:9px 18px; border-radius:7px; font-size:.82rem; font-weight:700; white-space:nowrap; }
+    .nav-cta:hover { background:var(--green-d); }
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; background:none; border:none; }
+    .hamburger span { width:22px; height:2px; background:var(--dark); border-radius:2px; }
+    .mobile-menu { display:none; position:fixed; inset:0; z-index:1100; background:#fff; flex-direction:column; padding:76px 24px 40px; overflow-y:auto; }
+    .mobile-menu.open { display:flex; }
+    .mobile-close { position:fixed; top:18px; right:20px; background:none; border:none; font-size:1.5rem; cursor:pointer; }
+    .mobile-menu a { padding:13px 0; font-size:1rem; font-weight:600; color:var(--dark); border-bottom:1px solid var(--gray-2); }
+    .mobile-menu .mm-group { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--gray-4); padding:18px 0 4px; }
+    .mobile-menu a.mm-cta { background:var(--green); color:#fff; border:none; border-radius:8px; text-align:center; margin-top:20px; padding:14px; }
+
+    /* ===== PAGE HERO ===== */
+    .page-hero { position: relative; background: linear-gradient(135deg, #0F1A0F 0%, #111A14 60%, #0A1520 100%); padding: 80px 24px 64px; overflow: hidden; }
+    .page-hero::before { content:''; position:absolute; inset:0; background:url('offre-complete-bg.jpg') center/cover no-repeat; opacity:.30; }
+    .page-hero::after { content:''; position:absolute; inset:0; background:linear-gradient(110deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,.45) 55%, rgba(0,0,0,.25) 100%); }
+    .page-hero-inner { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; }
+    .eyebrow { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: #7CE08A; margin-bottom: 14px; }
+    .page-hero h1 { color:#fff; font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 16px; }
+    .page-hero h1 em { color: var(--green); font-style: normal; }
+    .page-hero p { color: rgba(255,255,255,.82); max-width: 660px; font-size: 1.02rem; }
+
+    /* ===== SECTION / LABEL ===== */
+    .section { padding: 72px 0; }
+    .label { display:inline-flex; align-items:center; gap:8px; font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--green); margin-bottom:14px; }
+    .section-head { text-align:center; max-width:660px; margin:0 auto 44px; }
+    .section-head h2 { font-size: clamp(1.7rem, 3.6vw, 2.4rem); }
+    .section-head p { color: var(--gray-5); margin-top: 12px; }
+
+    /* ===== BLOC FACEBOOK (flux en direct) ===== */
+    .fb-block { max-width:560px; margin:0 auto; }
+    .fb-embed { min-height:360px; display:flex; justify-content:center; }
+    .fb-embed .fb-page, .fb-embed span, .fb-embed iframe { max-width:100% !important; }
+
+    /* Carte de consentement (motif « deux clics » — RGPD/CNIL, comme la carte Maps) */
+    .social-consent { width:100%; max-width:520px; border:1px solid var(--gray-2); border-radius:16px; background:var(--gray-1); padding:40px 28px; text-align:center; }
+    .social-consent .sc-ico { color:var(--green); margin-bottom:14px; line-height:0; }
+    .social-consent .sc-ico svg { width:34px; height:34px; display:inline-block; }
+    .social-consent h3 { font-size:1.3rem; margin-bottom:10px; }
+    .social-consent p { color:var(--gray-5); font-size:.9rem; max-width:400px; margin:0 auto 22px; line-height:1.6; }
+    .social-consent p a { text-decoration:underline; }
+    .btn-social { display:inline-flex; align-items:center; gap:9px; background:var(--green); color:#fff; border:none; cursor:pointer; font-family:'Inter',sans-serif; font-size:.9rem; font-weight:700; padding:13px 26px; border-radius:8px; transition:background .18s; }
+    .btn-social:hover { background:var(--green-d); }
+    .social-remember { display:flex; align-items:center; justify-content:center; gap:8px; margin-top:16px; font-size:.8rem; color:var(--gray-5); cursor:pointer; }
+    .social-remember input { width:16px; height:16px; accent-color:var(--green); cursor:pointer; }
+    .social-direct { display:inline-block; margin-top:14px; font-size:.82rem; color:var(--gray-5); }
+    .social-direct:hover { color:var(--green); }
+
+    /* ===== GRILLE RÉSEAUX (LinkedIn / Google — emplacements) ===== */
+    .social-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:16px; }
+    .social-card { border:1px solid var(--gray-2); border-radius:16px; padding:30px 28px; display:flex; flex-direction:column; background:#fff; transition:box-shadow .2s, border-color .2s; }
+    .social-card:hover { border-color:var(--green); box-shadow:0 8px 28px rgba(0,0,0,.07); }
+    .sc-top { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+    .sc-badge { width:44px; height:44px; border-radius:11px; display:flex; align-items:center; justify-content:center; font-size:1.35rem; color:#fff; flex-shrink:0; }
+    .sc-badge.li { background:#0A66C2; } .sc-badge.go { background:#fff; border:1px solid var(--gray-2); }
+    .social-card h3 { font-size:1.2rem; }
+    .sc-soon { display:inline-block; font-size:.62rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--green-d); background:var(--green-l); padding:3px 9px; border-radius:20px; margin-left:auto; }
+    .social-card p { color:var(--gray-5); font-size:.9rem; line-height:1.6; flex:1; margin:6px 0 20px; }
+    .sc-cta { display:inline-flex; align-items:center; gap:8px; align-self:flex-start; padding:11px 20px; border-radius:8px; font-size:.84rem; font-weight:700; background:var(--gray-1); color:var(--dark); border:1px solid var(--gray-2); transition:all .18s; }
+    .sc-cta:hover { border-color:var(--green); color:var(--green); }
+
+    /* ===== CTA ===== */
+    .cta-block { background: var(--green); border-radius: 16px; padding: 44px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .cta-block h2 { color: #fff; margin-bottom: 6px; }
+    .cta-block p { font-size: .95rem; color: rgba(255,255,255,.85); margin: 0; }
+    .cta-btn { background: #fff; color: var(--green); padding: 14px 28px; border-radius: 8px; font-weight: 700; font-size: .9rem; white-space: nowrap; }
+    .cta-btn:hover { background: var(--gray-1); }
+
+    /* ===== FOOTER ===== */
+    .page-footer { background: #111; padding: 44px 24px 28px; }
+    .page-footer-inner { max-width: 1100px; margin: 0 auto; }
+    .pf-links { display: flex; gap: 10px 22px; flex-wrap: wrap; margin-bottom: 14px; }
+    .pf-links a { color: rgba(255,255,255,.55); font-size: .82rem; }
+    .pf-links a:hover { color: #fff; }
+    .pf-title { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.3); margin-bottom: 8px; margin-top: 6px; }
+    .page-footer p.copy { font-size: .76rem; color: rgba(255,255,255,.3); margin-top: 12px; }
+
+    @media (max-width: 1100px) {
+      .nav-menu, .nav-right { display: none; }
+      .hamburger { display: flex; }
+    }
+    @media (max-width: 680px) {
+      .social-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 520px) {
+      .section { padding: 52px 0; }
+      .cta-block { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-wrap" aria-label="ENR Energy — accueil">
+        <img src="logo.png" alt="ENR Energy, électricien et installateur d'énergies renouvelables à Barraux (Isère)" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';" />
+        <span class="logo-fallback" style="display:none;">ENR ENERGY</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+        <li class="nav-item"><a href="electricite.html" class="nav-link">Électricité</a></li>
+        <li class="nav-item"><a href="domotique.html" class="nav-link">Domotique</a></li>
+        <li class="nav-item"><a href="automatisme-industriel.html" class="nav-link">Automatisme</a></li>
+        <li class="nav-item"><a href="genie-climatique.html" class="nav-link">Génie climatique</a></li>
+        <li class="nav-item"><a href="photovoltaique.html" class="nav-link">Photovoltaïque</a></li>
+        <li class="nav-item"><a href="bornes-de-recharge.html" class="nav-link">Bornes</a></li>
+        <li class="nav-item"><a href="qui-sommes-nous.html" class="nav-link">Qui sommes-nous</a></li>
+        <li class="nav-item">
+          <span class="nav-link active">Ressources <span class="chevron">▾</span></span>
+          <div class="dropdown">
+            <a href="galerie.html">Galerie</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="avis-clients.html">Avis clients</a>
+            <a href="notre-methode.html">Notre méthode</a>
+            <a href="aides-etat.html">Aides de l'État</a>
+            <a href="partenaires.html">Partenaires</a>
+            <a href="nous-recrutons.html">Nous recrutons</a>
+            <div class="dropdown-sep"></div>
+            <a href="https://www.linkedin.com/company/enr-energy/" target="_blank" rel="noopener">LinkedIn <span class="dd-ext">↗</span></a>
+            <a href="https://www.facebook.com/profile.php?id=61589418173402" target="_blank" rel="noopener">Facebook <span class="dd-ext">↗</span></a>
+          </div>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <a href="tel:+33476405669" class="nav-phone" style="display:flex;align-items:center;gap:6px;font-size:.83rem;font-weight:700;color:var(--dark);">
+          <span style="font-size:.9rem;"><svg class="e-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+          <span style="display:flex;flex-direction:column;line-height:1.35;">
+            <span style="white-space:nowrap;">04 76 40 56 69</span>
+            <span style="white-space:nowrap;">06 46 42 10 22</span>
+          </span>
+        </a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="menuClose" aria-label="Fermer">✕</button>
+    <a href="index.html">Accueil</a>
+    <a href="electricite.html">Électricité</a>
+    <a href="domotique.html">Domotique &amp; Automatisation</a>
+    <a href="automatisme-industriel.html">Automatisme Industriel</a>
+    <a href="genie-climatique.html">Génie Climatique</a>
+    <a href="photovoltaique.html">Photovoltaïque</a>
+    <a href="bornes-de-recharge.html">Bornes de Recharge</a>
+    <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+    <div class="mm-group">Ressources</div>
+    <a href="galerie.html">Galerie</a>
+    <a href="actualites.html">Actualités</a>
+    <a href="actualites.html">Actualités</a>
+    <a href="avis-clients.html">Avis clients</a>
+    <a href="notre-methode.html">Notre méthode</a>
+    <a href="aides-etat.html">Aides de l'État</a>
+    <a href="partenaires.html">Partenaires</a>
+    <a href="nous-recrutons.html">Nous recrutons</a>
+    <a href="https://www.linkedin.com/company/enr-energy/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a href="https://www.facebook.com/profile.php?id=61589418173402" target="_blank" rel="noopener">Facebook ↗</a>
+    <a href="contact.html" class="mm-cta">Contact</a>
+    <a href="tel:+33476405669" style="border:none;text-align:center;color:var(--green);font-weight:700;"><svg class="e-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg> 04 76 40 56 69</a> <a href="tel:+33476405669" style="border:none;text-align:center;color:var(--green);font-weight:700;">/ 06 46 42 10 22</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <header class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Ressources · Actualités</div>
+      <h1>Suivez nos chantiers<br/><em>en direct.</em></h1>
+      <p>Nos dernières réalisations, publications et actualités en Isère et en Savoie — mises à jour au fil de l'eau sur nos réseaux Facebook, LinkedIn et Google.</p>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       SECTION FACEBOOK — flux en direct (module officiel Facebook « Page »)
+       Les publications s'affichent AUTOMATIQUEMENT : rien à mettre à jour ici,
+       il suffit de publier sur la page Facebook.
+       Conformité RGPD/CNIL : le module Facebook n'est chargé qu'APRÈS un clic
+       de l'internaute (même principe « deux clics » que la carte Google Maps).
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section class="section" style="background:var(--gray-1);">
+    <div class="container">
+      <div class="section-head">
+        <div class="label">Facebook</div>
+        <h2>Nos dernières publications.</h2>
+        <p>Chantiers en cours, coulisses de l'entreprise, conseils : notre fil Facebook est mis à jour régulièrement.</p>
+      </div>
+
+      <div class="fb-block">
+        <div class="fb-embed" id="fbEmbed">
+          <!-- Avant consentement : carte « deux clics ». Après le clic, le flux
+               Facebook officiel est injecté ici par le script en bas de page. -->
+          <div class="social-consent" id="fbConsent">
+            <div class="sc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <h3>Notre fil Facebook</h3>
+            <p>Pour afficher nos dernières publications, nous chargeons le module Facebook. Il peut déposer des cookies de Facebook (Meta). <a href="politique-confidentialite.html">En savoir plus</a>.</p>
+            <button type="button" class="btn-social" id="fbLoad">Afficher le fil Facebook</button>
+            <label class="social-remember"><input type="checkbox" id="fbRemember" /> Se souvenir de mon choix sur ce site</label>
+            <a class="social-direct" href="https://www.facebook.com/profile.php?id=61589418173402" target="_blank" rel="noopener">ou ouvrir notre page Facebook ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════════
+       SECTION LINKEDIN & GOOGLE — emplacements prêts à recevoir un flux
+       ─────────────────────────────────────────────────────────────────────
+       POUR UN FUTUR STAGIAIRE / AGENCE : la structure est déjà en place.
+       Pour brancher un flux en direct, remplacer le contenu de la carte
+       concernée (bloc <div class="social-card">…) par le code d'intégration :
+
+       • LINKEDIN : LinkedIn ne propose pas d'embed « fil d'entreprise » gratuit.
+         Options : (1) intégrer un post précis via « … › Intégrer ce post »
+         (iframe fourni par LinkedIn) ; (2) widget tiers (ex. SociableKit,
+         Elfsight, Taggbox) collé à la place de la carte ci-dessous.
+
+       • GOOGLE (fiche d'établissement) : pas d'embed officiel des « posts »/
+         avis. Options : widget tiers (Elfsight/SociableKit « Google Reviews »)
+         ou API Google Places. Les avis figurent déjà sur avis-clients.html.
+
+       RGPD/CNIL : tout widget tiers déposant des cookies doit être chargé
+       APRÈS un clic (même principe « deux clics » que le bloc Facebook et la
+       carte Maps). Voir le script #fbLoad plus bas comme modèle réutilisable.
+       ═══════════════════════════════════════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="label">LinkedIn &amp; Google</div>
+        <h2>Retrouvez-nous partout.</h2>
+        <p>Nos actualités professionnelles et les avis de nos clients, directement depuis nos réseaux.</p>
+      </div>
+
+      <div class="social-grid">
+
+        <!-- Carte LinkedIn -->
+        <div class="social-card">
+          <div class="sc-top">
+            <div class="sc-badge li">in</div>
+            <h3>LinkedIn</h3>
+            <span class="sc-soon">Flux à venir</span>
+          </div>
+          <p>Nos actualités d'entreprise, recrutements et articles de fond. Le flux en direct sera intégré ici prochainement — en attendant, suivez-nous directement sur notre page.</p>
+          <a class="sc-cta" href="https://www.linkedin.com/company/enr-energy/" target="_blank" rel="noopener">Voir notre page LinkedIn ↗</a>
+        </div>
+
+        <!-- Carte Google -->
+        <div class="social-card">
+          <div class="sc-top">
+            <div class="sc-badge go"><span style="color:#4285F4;">G</span></div>
+            <h3>Google</h3>
+            <span class="sc-soon">Flux à venir</span>
+          </div>
+          <p>Nos dernières actualités et avis publiés sur notre fiche d'établissement Google. L'intégration en direct arrivera ici — vous pouvez déjà consulter notre fiche.</p>
+          <a class="sc-cta" href="https://www.google.com/maps?cid=12231483885476205519" target="_blank" rel="noopener">Voir notre fiche Google ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="cta-block">
+        <div>
+          <h2>Un projet en tête ?</h2>
+          <p>Étude et devis gratuits, sans engagement — réponse rapide.</p>
+        </div>
+        <a href="contact.html" class="cta-btn">Demander un devis →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="page-footer">
+    <div class="page-footer-inner">
+      <p class="pf-title">Nos expertises</p>
+      <div class="pf-links">
+        <a href="electricite.html">Électricité</a>
+        <a href="domotique.html">Domotique &amp; Automatisation</a>
+        <a href="automatisme-industriel.html">Automatisme Industriel</a>
+        <a href="genie-climatique.html">Génie Climatique</a>
+        <a href="photovoltaique.html">Photovoltaïque</a>
+        <a href="bornes-de-recharge.html">Bornes de Recharge</a>
+      </div>
+      <p class="pf-title">Ressources</p>
+      <div class="pf-links">
+        <a href="galerie.html">Galerie</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="avis-clients.html">Avis clients</a>
+        <a href="notre-methode.html">Notre méthode</a>
+        <a href="aides-etat.html">Aides de l'État</a>
+        <a href="partenaires.html">Partenaires</a>
+        <a href="nous-recrutons.html">Nous recrutons</a>
+      </div>
+      <p class="pf-title">ENR Energy</p>
+      <div class="pf-links">
+        <a href="index.html">Accueil</a>
+        <a href="particuliers.html">Particuliers</a>
+        <a href="professionnels.html">Professionnels</a>
+        <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+        <a href="zone-intervention.html">Zone d'intervention</a>
+        <a href="contact.html">Contact</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+      </div>
+      <p class="copy">© 2026 ENR Energy SAS — 47 Impasse des Noyers, 38530 Barraux — SIREN 501 832 752 — RGE Qualit'EnR n° 55892</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+    document.getElementById('menuClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+
+    /* ═══════════════════════════════════════════════════════════════════════
+       CHARGEMENT « DEUX CLICS » DU FLUX FACEBOOK (conformité RGPD/CNIL)
+       Le SDK Facebook n'est chargé qu'après un clic explicite de l'internaute.
+       Ce bloc peut servir de modèle pour brancher LinkedIn/Google plus tard.
+       ═══════════════════════════════════════════════════════════════════════ */
+    (function () {
+      var STORAGE_KEY = 'enr-fb-consent';
+      var PAGE_URL    = 'https://www.facebook.com/profile.php?id=61589418173402';
+      var embed   = document.getElementById('fbEmbed');
+      var loadBtn = document.getElementById('fbLoad');
+      if (!embed) return;
+
+      function loadFacebook() {
+        // Remplace la carte de consentement par le module officiel Facebook.
+        embed.innerHTML =
+          '<div id="fb-root"></div>' +
+          '<div class="fb-page" data-href="' + PAGE_URL + '" data-tabs="timeline" ' +
+          'data-width="500" data-height="720" data-small-header="false" ' +
+          'data-adapt-container-width="true" data-hide-cover="false" ' +
+          'data-show-facepile="true">' +
+            '<blockquote cite="' + PAGE_URL + '" class="fb-xfbml-parse-ignore">' +
+              '<a href="' + PAGE_URL + '" target="_blank" rel="noopener">ENR Energy sur Facebook</a>' +
+            '</blockquote>' +
+          '</div>';
+
+        if (window.FB && window.FB.XFBML) {
+          window.FB.XFBML.parse(embed);            // SDK déjà présent → on (re)parse
+        } else {
+          var s = document.createElement('script');
+          s.async = true; s.defer = true; s.crossOrigin = 'anonymous';
+          s.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v19.0';
+          document.body.appendChild(s);
+        }
+      }
+
+      if (loadBtn) {
+        loadBtn.addEventListener('click', function () {
+          var remember = document.getElementById('fbRemember');
+          if (remember && remember.checked) {
+            try { localStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+          }
+          loadFacebook();
+        });
+      }
+
+      // Si l'internaute a déjà consenti lors d'une visite précédente : chargement auto.
+      try {
+        if (localStorage.getItem(STORAGE_KEY) === '1') { loadFacebook(); }
+      } catch (e) {}
+    })();
+  </script>
+  <script src="cookie-consent.js" defer></script>
+</body>
+</html>
